@@ -50,6 +50,7 @@ export default {
     gantt.config.date_format = "%Y-%m-%d";
 
     gantt.init(this.$refs.ganttContainer);
+    gantt.i18n.setLocale("ru");
     gantt.parse(this.$props.tasks);
 
     this.$_initDataProcessor();
